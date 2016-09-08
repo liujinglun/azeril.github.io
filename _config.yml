@@ -1,16 +1,16 @@
 # Site settings
-title: Microdust
+title: Allen  
 header-img: "img/autumn2.jpg"
 tagline: "吉光片羽"  
-description: "在遙遠的地方 一切虔誠終必相遇"  
+description: "最好的时光是当初，其次是现在。"  
 baseurl: ""
-url: "http://azeril.me"  
+url: "http://jinglunliu.com"  
 #url: "http://localhost:4000"
 
 # About/contact
 owner: 
-  name: "Azeril"
-  email: azeril@live.cn
+  name: "Allen Liu "
+  email: jinglunliu@jhu.edu
   bio: "明朝即長路 惜取此時心"
 
 # Data
