@@ -6,7 +6,7 @@ header-img: "img/star1.jpg"
 ---
 
 <center>
-    <p><img src="http://dreamofbook.qiniudn.com/Zero.png" align="center"></p>
+    <p><img src="http://ww3.sinaimg.cn/large/6add1635gw1f7ny16jvp7j20o60zawqz.jpg" align="center"></p>
 </center>
 
 Allen Liu<br/>
