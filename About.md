@@ -2,7 +2,7 @@
 layout: page
 title: "About Me"
 description: "刘经伦的私人空间"
-header-img: "img/1.jpg"
+header-img: "img/star1.jpg"
 ---
 
 <center>
