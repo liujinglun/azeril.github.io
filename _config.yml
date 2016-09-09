@@ -54,7 +54,7 @@ defaults:
     values:
       layout: "post"
       author: "jinglunliu"
-      header-img: "img/4.jpg" # We don't want posts without a header image, that whould mean white on white
+      header-img: "img/star2.jpg" # We don't want posts without a header image, that whould mean white on white
 
 
 # Comments 
