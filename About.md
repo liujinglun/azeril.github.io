@@ -9,9 +9,9 @@ header-img: "img/star1.jpg"
     <p><img src="http://dreamofbook.qiniudn.com/Zero.png" align="center"></p>
 </center>
 
-Allen Liu<br />
-MSSI @ JHU <br />
-Enjoy the moment. <br />
+Allen Liu<br/>
+MSSI @ JHU <br/>
+Enjoy the Moment. <br/>
 
 
 
