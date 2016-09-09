@@ -10,7 +10,11 @@ header-img: "img/star1.jpg"
 </center>
 
 Allen Liu<br/>
-MSSI @ JHU <br/>
+
+Software Engineering @ Sun Yat-Sen University.<br/>
+
+Information Security @ Johns Hopkins University <br/>
+
 Enjoy the Moment. <br/>
 
 
