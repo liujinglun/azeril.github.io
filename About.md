@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "About Me"
-description: "刘经伦的私人空间"
+description: ""
 header-img: "img/star1.jpg"
 ---
 
 <center>
-    <p><img src="http://ww2.sinaimg.cn/large/6add1635gw1f7nydwwtgkj20dc0hsmyr.jpg" align="right"></p>
+    <p><img src="http://ww2.sinaimg.cn/large/6add1635gw1f7nymzucj7j206o08wgm0.jpg" align="center"></p>
 </center>
 
 Allen Liu<br/>
