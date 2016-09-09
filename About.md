@@ -6,7 +6,7 @@ header-img: "img/star1.jpg"
 ---
 
 <center>
-    <p><img src="http://ww2.sinaimg.cn/large/6add1635gw1f7nydwwtgkj20dc0hsmyr.jpg" align="center"></p>
+    <p><img src="http://ww2.sinaimg.cn/large/6add1635gw1f7nydwwtgkj20dc0hsmyr.jpg" align="right"></p>
 </center>
 
 Allen Liu<br/>
