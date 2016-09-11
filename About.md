@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About Me"
-description: ""
+description: "不想惜败，我想赢。"
 header-img: "img/star1.jpg"
 ---
 <!--
