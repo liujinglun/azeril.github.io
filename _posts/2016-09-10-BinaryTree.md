@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Binary Tree Summary
-categories:  [blog]()
-tags: [leetcode ]()
+title: BinaryTree Summary
+categories:  [blog ]
+tags: [leetcode ]
 comments: true
 published: true
 ---
