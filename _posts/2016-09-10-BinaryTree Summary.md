@@ -48,5 +48,29 @@ published: true
 	 }
 	 
 5.前序遍历，中序遍历，后序遍历<br/>
-6.
+6.分层遍历二叉树<br/>
+按照层次遍历二叉树，即使用上->下，左->右的顺序遍历二叉树。<br/>
+相当于广度优先搜索，使用队列的数据结构。队列初始化，先把根节点放入队列中。**当队列不为空时**，进行如下操作：弹出一个节点，访问，若其左节点或者右节点不为空，则将其押入队列。<br/>
+**Code**:
+
+    void LevelTraverse(BinaryTreeNode * root) {
+    	if (root == NULL) {
+    		return ;
+    	}
+    	queue<BinaryTreeNode* > q;
+    	q.push(root);
+    	while (!q.empty()) {
+    		BinaryTreeNode* node = q.front();
+    		q.pop();
+    		if (node->left != NULL) {
+    			q.push(node->left);
+    		}
+    		if (node->right != NULL) {
+    			q.push(node->right);
+    		}
+    		
+    	}
+    }
+
+
 
