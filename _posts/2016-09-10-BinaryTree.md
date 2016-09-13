@@ -43,8 +43,10 @@ published: true
      	  }
      	  int depthLeft = getDepth(root->left);
      	  int depthRight = getDepth(root->right);
-     	  return depthLeft>depthRight?(depthLeft+1):(depthRight+1);
+     	  //return depthLeft>depthRight?(depthLeft+1):(depthRight+1);
+     	  return max(depthLeft, depthRight) + 1;
 	 }
 	 
-5.前序遍历，中序遍历，后序遍历
+5.前序遍历，中序遍历，后序遍历<br/>
+6.
 
