@@ -70,7 +70,7 @@ published: true
        visit(root);//visit the root node
        PreOrderTraverse(root->right);
     }
-5.3 后序遍历递归解法
+5.3 后序遍历<br/>
 (1)如果二叉树为空，空操作.<br/>
 (2)如果二叉树不为空，后序遍历左子树，后序遍历右子树，访问根节点.<br>
 
