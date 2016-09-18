@@ -48,7 +48,7 @@ published: true
 	 }
 	 
 5.前序遍历，中序遍历，后序遍历<br/>
-5.1 前序遍历<br/>
+5.1 前序遍历  ** 根左右 **<br/>
 (1)如果二叉树为空，进行空操作.<br/>
 (2)如果二叉树不为空，先访问根节点，然后访问左子树，然后右子树；<br/>
 
@@ -59,7 +59,7 @@ published: true
         	PreOrderTraverse(root->left);
         	PreOrderTraverse(root->right);
     }
-5.2 中序遍历<br/>
+5.2 中序遍历  ** 左根右 **<br/>
 (1)如果二叉树为空，进行空操作.<br/>
 (2)如果二叉树不为空，中序遍历左子树，访问根节点，中序遍历右子树<br/>
  
@@ -70,7 +70,7 @@ published: true
        visit(root);//visit the root node
        PreOrderTraverse(root->right);
     }
-5.3 后序遍历<br/>
+5.3 后序遍历  ** 左右根 **<br/>
 (1)如果二叉树为空，空操作.<br/>
 (2)如果二叉树不为空，后序遍历左子树，后序遍历右子树，访问根节点.<br>
 
