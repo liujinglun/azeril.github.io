@@ -72,6 +72,7 @@ published: true
        visit(root);//visit the root node
        PreOrderTraverse(root->right);
     }
+    
 <br/>
 5.3 后序遍历  **左右根**<br/>
 (1)如果二叉树为空，空操作.<br/>
