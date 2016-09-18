@@ -58,9 +58,9 @@ published: true
         	visit(root);//visit the root node
         	PreOrderTraverse(root->left);
         	PreOrderTraverse(root->right);
-    }
-    
-    
+    } 
+   
+ <br/>
 5.2 中序遍历  ** 左根右 **<br/>
 (1)如果二叉树为空，进行空操作.<br/>
 (2)如果二叉树不为空，中序遍历左子树，访问根节点，中序遍历右子树<br/>
