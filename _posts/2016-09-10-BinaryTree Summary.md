@@ -85,6 +85,8 @@ published: true
        	PreOrderTraverse(root->right);
        	visit(root);//visit the root node
     }
+    
+    
 <br/>
 6.分层遍历二叉树<br/>
 按照层次遍历二叉树，即使用上->下，左->右的顺序遍历二叉树。<br/>
