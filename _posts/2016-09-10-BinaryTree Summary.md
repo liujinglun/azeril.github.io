@@ -2,7 +2,7 @@
 layout: post
 title: BinaryTree Summary
 categories:  [blog ]
-tags: [leetcode ]
+tags: [leetcode ]
 comments: true
 published: true
 ---
