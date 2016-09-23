@@ -5,7 +5,7 @@ categories: [blog ]
 tags: [leetcode, python ]
 comments: true
 ---
-# python Notebook[Python3.0]
+#python Notebook[Python3.0]
 ## 1.function
     def my_abs(x):
         if x>0:
