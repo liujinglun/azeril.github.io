@@ -6,7 +6,7 @@ tags: [leetcode, python ]
 comments: true
 ---
 # python Notebook[Python2.7]
-##1.function
+## 1.function
     def my_abs(x):
         if x>0:
             return x
