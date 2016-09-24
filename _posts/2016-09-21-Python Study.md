@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code Skill
+title: Python notebook
 categories: [blog ]
 tags: [leetcode, python ]
 comments: true
