@@ -6,7 +6,7 @@ tags: [leetcode, python ]
 comments: true
 ---
 # Python Notebook[Python2.7]
-## 1.function
+## 1.Function
 ```python
 def my_abs(x):
     if x>0:
@@ -35,8 +35,11 @@ def fact_var(value, product):
         return product 
     return fact_var(value-1, product*value)
 ```
-## 2.一些特性：
-### 2.1函数切片:
+
+
+## 2.一些特性
+
+### 2.1函数切片
 
 ```python
 def slice():
@@ -62,7 +65,7 @@ li[:10:2]
  结果为(1,2,3)
 
 ### 2.2迭代
-在Python中，给定一个tuple或者list，可以使用for循环来进行遍历，称之为迭代，使用**for ... in ...**语句。
+在Python代码中，给定一个tuple或者list，可以使用for循环来进行遍历，称之为迭代，使用**for ... in ...**语句。
 
 ```python
 def iteration:
