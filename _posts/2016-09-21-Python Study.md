@@ -144,4 +144,26 @@ p.par()
 <__main__.Parent object at 0x0000000002A47240>
 ```
 
+3.中序遍历非递归版本：
+
+```python
+class Solution(object):
+def inorderTraversal(self, root):
+	if not root:
+		return []
+	stack = []
+	result = []
+	cur = root
+	while len(stack)>0 or cur:
+		if cur:
+			stack.append(cur)
+             # using append to get the last element in list.
+			cur = cur.left
+		else: 
+		    cur = stack.pop()
+             # first need to pop the top element and then put it              			  into result.
+		    result.append(cur.val)
+		    cur = cur.right
+	return result
+```
 
