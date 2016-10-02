@@ -7,7 +7,7 @@ comments: ture
 publised:true
 
 ---
-#Leetcode102 Python version
+# Leetcode102 Python version
 题目要求:Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
 
 这道题之前使用C++完成过一次，最近在学Python，所以想重新用Python再写一遍，没想到写的过程及其不顺利，费了很大劲才AC，于是记录一下。
