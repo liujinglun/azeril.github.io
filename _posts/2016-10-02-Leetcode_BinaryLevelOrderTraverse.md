@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leetcode102 Python
+title: Leetcode 102 Python
 categories: [blog]
 tags:[leetcode, Binary Tree]
 comments: ture

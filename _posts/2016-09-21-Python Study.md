@@ -170,3 +170,18 @@ def inorderTraversal(self, root):
 	return result
 ```
 
+4. Python中enumerate的用法
+
+   ```python
+   import sys
+   list1 = {'1', '2', '3'}
+   for index, item in enumerate(list1):
+       print index, item
+   ```
+   输出结果为：
+
+   >0 1
+   >1 3
+   >2 2
+
+   使用enumerate()函数可以同时遍历索引和函数值。相当于map的用法。
