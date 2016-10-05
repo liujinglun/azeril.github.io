@@ -1,6 +1,6 @@
-# Microdust 微尘
+# Jinglun Liu
 
-This is a blog created by Azeril. The blog is live at [azeril.me](http://azeril.me/).
+The blog is live at [jinglunliu.com](http://jinglunliu.com/).
 
 ## Thanks
 
