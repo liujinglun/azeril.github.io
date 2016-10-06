@@ -185,3 +185,18 @@ def inorderTraversal(self, root):
    >2 2
 
    使用enumerate()函数可以同时遍历索引和函数值。相当于map的用法。
+
+5. Python新建一个map类型:
+
+   ```python
+   nums=[1,2,3]
+   dic = {}
+   for i in nums:
+       dic[i] = False
+   ```
+
+> 输出结果为：
+>
+> {1: False, 2: False, 3: False, 5: False}
+>
+> dic是{key, value}类型，若想只输出key，则直接print key，若想输出value，则print dic[key].
