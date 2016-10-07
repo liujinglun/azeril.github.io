@@ -200,3 +200,16 @@ def inorderTraversal(self, root):
 > {1: False, 2: False, 3: False, 5: False}
 >
 > dic是{key, value}类型，若想只输出key，则直接print key，若想输出value，则print dic[key].
+
+6. Python在list中删除一个元素x:
+
+   ```python
+   list1.discard(x)
+   ```
+
+7. Python在dict中获取value对应的key值：
+
+   ```python
+   print dic.values().index(num)
+   ```
+
