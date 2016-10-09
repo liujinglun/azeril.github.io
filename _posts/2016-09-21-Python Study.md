@@ -204,9 +204,56 @@ for i in nums:
 
 ```python
 list1.discard(x)
+list1.remove(x)
 ```
 7.Python在dict中获取value对应的key值：
 
 ```python
 print dic.values().index(num)
 ```
+8.若需要将几个数字插入到list中，并计算和，则可以写成：
+
+```python
+list1 = [nums[i], nums[j], nums[k]]
+get_Sum = sum(list1)
+```
+
+9.九宫格中每个square中的元素表示：
+
+```python
+for i in range(0, 9):
+    for j in range(0, 9):
+        element = board[i/3*3+j/3][i%3*3+j%3]
+```
+10.Python中的copy函数：
+
+```python
+#浅拷贝，只拷贝父对象，不会拷贝对象内部的子对象；
+copy.copy
+#深拷贝，拷贝对象及其子对象；
+copy.deepcopy
+'''
+一个例子
+'''
+import copy
+a = [1,2,['a','b']] #原始对象
+b = a #赋值，传对象的引用
+c = copy.copy(a) #对象拷贝，浅拷贝
+d = copy.deepcopy(a) #对象拷贝，深拷贝
+a.append(2) #修改对象
+a[2].append('c') #修改对象a中的['a', 'b']数组
+print 'a:', a # a = [1,2,['a','b','c'], 3]
+print 'b', b # b = [1,2,['a', 'b', 'c'], 3]
+print 'c', c # c = [1,2,['a', 'b', 'c']]
+print 'd', d # d = [1,2, ['a', 'b']]
+
+#另外一种浅拷贝：
+a = set(a)
+dict.copy(d) = dict(d)
+
+```
+11.
+
+对于list，使用append(value)函数插入数值到list中；
+
+对于set，使用add(value)函数插入数值到set中。
