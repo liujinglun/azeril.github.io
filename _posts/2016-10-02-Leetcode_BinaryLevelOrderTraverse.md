@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leetcode 102 Python
+title: BinaryTree Level Traversal
 categories: [blog]
 tags:[leetcode, Binary Tree]
 comments: ture
