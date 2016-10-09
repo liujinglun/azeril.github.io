@@ -6,7 +6,8 @@ tags: [leetcode, python ]
 comments: true
 ---
 # Python Notebook[Python2.7]
-## 1.Function
+## 1.函数
+
 ```python
 def my_abs(x):
     if x>0:
