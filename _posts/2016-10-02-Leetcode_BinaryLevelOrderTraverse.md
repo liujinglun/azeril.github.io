@@ -1,10 +1,11 @@
 ---
 layout: post
-title: BinaryTree Level Traversal
-categories: [blog]
-tags:[leetcode, Binary Tree]
-comments: ture
-publised:true
+title: Leetcode102 Python version
+categories:  [blog ]
+tags: [leetcode, BinaryTree ]
+comments: true
+published: true
+
 
 ---
 # Leetcode102 Python version
