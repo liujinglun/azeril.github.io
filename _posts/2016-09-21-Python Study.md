@@ -299,4 +299,12 @@ class Solution(object):
     self.getNext(nums, k)
 ```
 
+13. Python中“//”表示整数除法。
 
+```python
+print 4//2
+>> 输出结果为 2.
+print 4//3
+>> 输出结果为 1.
+
+```
