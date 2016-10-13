@@ -44,15 +44,29 @@ def fact_var(value, product):
 
 ```python
 def slice():
-    li=[1,2,3,4,5...10]
+    li=[1,2,3,4,5]
     print li[:3]
 ```
 结果为：[1,2,3]
-也可以进行倒序切片，
+也可以进行倒序切片:
 ```python
-printli[:-1]
+print li[1:]
+<<[2,3,4,5]
+## Get li[1]-li[len(li)-1]
+print li[-1:]
+<<[5]
+##Get li[-1]
+
+print li[:1]
+<<[5]
+##Get li[len(li)-1]
+
+print li[:-1]
+<<[1,2,3,4]
+##Get li[0]-li[len(li) - 1 - 1]
 ```
-则结果为[1,2,3]，记住倒数第一个元素的索引是-1.
+
+可以对数组进行周期性筛取：
 
 ```python
 li[:10:2]
