@@ -269,6 +269,34 @@ dict.copy(d) = dict(d)
 ```
 11.
 
-对于list，使用append(value)函数插入数值到list中；
+- 对于list，使用append(value)函数插入数值到list中；
+- 对于set，使用add(value)函数插入数值到set中。
 
-对于set，使用add(value)函数插入数值到set中。
+12.Python中的函数调用
+
+- 注意被调用的函数参数第一位应该是**self**，在其他函数调用该函数时**需要在函数名前面写self,在参数中不需要写self**。
+
+```python
+class Solution(object):
+  def getNext(self, nums, k):
+      le = len(nums)
+      targetPosition = -1
+      for i in range(le-1, 0, -1):
+          if nums[i-1] < nums[i]:
+              targetPosition = i - 1
+              break
+      for i in range(le-1, targetPosition, -1):
+          if nums[i] > nums[targetPosition]:
+              temp = nums[i]
+              nums[i] = nums[targetPosition]
+              nums[targetPosition] = temp
+              break
+      reversed(nums[targetPosition+1:])
+      nums[targetPosition+1:] = reversed(nums[targetPosition+1:])
+      return nums
+      
+  def getPermutation(self, n, k):
+    self.getNext(nums, k)
+```
+
+
