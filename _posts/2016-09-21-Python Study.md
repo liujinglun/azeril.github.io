@@ -53,6 +53,7 @@ def slice():
 print li[1:]
 <<[2,3,4,5]
 ## Get li[1]-li[len(li)-1]
+
 print li[-1:]
 <<[5]
 ##Get li[-1]
