@@ -50,9 +50,15 @@ def slice():
 结果为：[1,2,3]
 也可以进行倒序切片:
 ```python
+print li[0:]
+<<[1,2,3,4,5]
+
+print li[:0]
+<<[]--It is a empty list.
+
 print li[1:]
 <<[2,3,4,5]
-## Get li[1]-li[len(li)-1]
+## Get li[1] to li[len(li)-1]
 
 print li[-1:]
 <<[5]
@@ -64,7 +70,7 @@ print li[:1]
 
 print li[:-1]
 <<[1,2,3,4]
-##Get li[0]-li[len(li) - 1 - 1]
+##Get li[0]to li[len(li) - 1 - 1]
 ```
 
 可以对数组进行周期性筛取：
@@ -142,7 +148,7 @@ def iteration():
 
 1.Python类的方法和普通的函数的区别，**在类的方法必须有一个额外的第一个参数(self)**，但是在调用这个方法的时候不必为这个参数赋值。self代表的是类的试了。
 
-2.Python中类的写法：
+## 2.5Python中类的写法：
 
 ```python
 class Parent:
@@ -186,7 +192,7 @@ def inorderTraversal(self, root):
 	return result
 ```
 
-4.Python中enumerate的用法
+## 2.6.Python中enumerate的用法
 
 ```python
 import sys
@@ -202,7 +208,7 @@ for index, item in enumerate(list1):
 
 使用enumerate()函数可以同时遍历索引和函数值。相当于map的用法。
 
-5.Python新建一个map类型:
+## 2.7.Python新建一个map类型:
 
 ```python
 nums=[1,2,3]
@@ -216,32 +222,32 @@ for i in nums:
 >
 > dic是{key, value}类型，若想只输出key，则直接print key，若想输出value，则print dic[key].
 
-6.Python在list中删除一个元素x:
+## 2.8.Python在list中删除一个元素x:
 
 ```python
 list1.discard(x)
 list1.remove(x)
 ```
-7.Python在dict中获取value对应的key值：
+## 2.9.Python在dict中获取value对应的key值：
 
 ```python
 print dic.values().index(num)
 ```
-8.若需要将几个数字插入到list中，并计算和，则可以写成：
+## 2.10.若需要将几个数字插入到list中，并计算和，则可以写成：
 
 ```python
 list1 = [nums[i], nums[j], nums[k]]
 get_Sum = sum(list1)
 ```
 
-9.九宫格中每个square中的元素表示：
+## 11.九宫格中每个square中的元素表示：
 
 ```python
 for i in range(0, 9):
     for j in range(0, 9):
         element = board[i/3*3+j/3][i%3*3+j%3]
 ```
-10.Python中的copy函数：
+## 12.Python中的copy函数：
 
 ```python
 #浅拷贝，只拷贝父对象，不会拷贝对象内部的子对象；
@@ -266,14 +272,13 @@ print 'd', d # d = [1,2, ['a', 'b']]
 #另外一种浅拷贝：
 a = set(a)
 dict.copy(d) = dict(d)
-
 ```
-11.
+## 13.
 
 - 对于list，使用append(value)函数插入数值到list中；
 - 对于set，使用add(value)函数插入数值到set中。
 
-12.Python中的函数调用
+## 14.Python中的函数调用
 
 - 注意被调用的函数参数第一位应该是**self**，在其他函数调用该函数时**需要在函数名前面写self,在参数中不需要写self**。
 
@@ -300,12 +305,48 @@ class Solution(object):
     self.getNext(nums, k)
 ```
 
-13. Python中“//”表示整数除法。
+## 15.Python中“//”表示整数除法。
 
 ```python
 print 4//2
 >> 输出结果为 2.
 print 4//3
 >> 输出结果为 1.
-
 ```
+## 16.recursion 递归的理解
+
+可见Leetcode相关题目：
+
+[Permutations](https://leetcode.com/problems/permutations/)
+
+具体思想：
+
+题目为找出[1,2,3]能组成的所有三位数，每个数字只能用一次。
+
+递归的思想是不断化简，由复杂到简单。
+
+- 若1确定的情况下，则考虑2，3组成的二位数；
+
+  - 若2确定的情况下，则考虑3组成的一位数
+    - 返回[3]
+    - 返回[2, 3]
+  - 若3确定的情况下，同理，返回[3,2]
+  - 在1确定的情况下，返回[1, 2, 3]和[1, 3, 2].
+
+  递归函数一定有一个条件，达到此条件后函数开始从底向上执行，常见的条件有**nums内元素个数为1**，之后会开始回溯。
+
+  ## 17.Python判断字符串中子字符串的起始位置
+
+  ```python
+  needle = "asdf"
+  haystack = "basdasdf"
+  if needle in haystack:
+      print haystack.find(needle)
+  << output:4
+  ```
+
+## int 边界
+
+在Python中，int类型的最大值为2147483647;
+
+在Python中，int类型的最小值为-2147483648.
