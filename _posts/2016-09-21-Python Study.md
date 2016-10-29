@@ -335,6 +335,8 @@ print 4//3
 
   递归函数一定有一个条件，达到此条件后函数开始从底向上执行，常见的条件有**nums内元素个数为1**，之后会开始回溯。
 
+  ​
+
   ## 17.Python判断字符串中子字符串的起始位置
 
   ```python
@@ -345,8 +347,31 @@ print 4//3
   << output:4
   ```
 
-## int 边界
+## 18.int 边界
 
 在Python中，int类型的最大值为2147483647;
 
 在Python中，int类型的最小值为-2147483648.
+
+## 19.Python Class中的init函数
+
+Init doesn't initialize a class, it initializes an instance of a class or an object. 
+
+[init函数不对class初始化，只初始化类的实例或者一个对象]。
+
+class Dog:
+
+```python
+Class Dog:
+    def __init__(self, legs, colour):
+        self.legs = legs
+        self.colour = colour
+        fido = Dog(4, "brown")
+        spot = Dog(3, "mostly yellow")
+```
+
+根据上面代码得：Fido is a brown dog with 4 legs while Spot is a bit of a cripple and is mostly yellow. 
+
+he __init__ function is called a constructor, or initializer, and is automatically called when you create a new instance of a class. Within that function, the newly created object is assigned to the parameter self. The notation self.legs is an attribute called legs of the object in the variable self. Attributes are kind of like variables, but they describe the state of an object, or particular actions (functions) available to the object.
+
+init调用constructor or initializer，当对一个雷创建新的实例的时候自动调动。在函数中，使用self.legs可以调用legs attribute。
