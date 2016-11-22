@@ -374,4 +374,34 @@ Class Dog:
 
 he __init__ function is called a constructor, or initializer, and is automatically called when you create a new instance of a class. Within that function, the newly created object is assigned to the parameter self. The notation self.legs is an attribute called legs of the object in the variable self. Attributes are kind of like variables, but they describe the state of an object, or particular actions (functions) available to the object.
 
-init调用constructor or initializer，当对一个雷创建新的实例的时候自动调动。在函数中，使用self.legs可以调用legs attribute。
+init调用constructor or initializer，当对一个类创建新的实例的时候自动调动。在函数中，使用self.legs可以调用legs attribute。
+
+## 20.split(), strip(), join funciton.
+
+1.strip(x):
+
+- 删除s字符串中开头、结尾处，位于x删除序列的字符
+- 若参数为空，则默认删除'  '空字符。
+- 例：
+  - a = '   xt123   '
+  - a.strip() = '123'
+  - a = 'xt123'
+  - a.strip(x) = 't123'
+    - 若a = ' xt123 ', 则a.strip(x) = ' xt123 '—因为x不在边上，所以不能删除！
+    - strip函数删除边**（开头或结尾）**上的字符！
+
+2.split(x)：
+
+- 按照某一个字符对字符串进行切分，并将结果放到一个新的list中。
+- 例a = 'x abv' 则a.split() = ['a', 'abv'].
+- 默认使用' '空格作为分隔符。
+- 例a = 'pp x dd',则a.split(x) = ['pp', 'dd']
+
+3.a.join(b):
+
+a,b均为string类型，join函数的作用是使用a作为分隔符，将a插入到b中。
+
+- 例a='1', b = '234'
+- ' '.join(b) 结果为在2,3,4之间插入空格，结果为'2 3 4'.
+- a.join(b)结果为'21314'.
+- 返回结果仍为string类型。

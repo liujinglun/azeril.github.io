@@ -19,7 +19,7 @@ published: true
 	 	BinaryTreeNode* left;
 	 	BinaryTreeNode* right;
 	 }
-	 
+
 3.求二叉树中节点的数量：
 递归解法：<br/>
 如果二叉树为空，则节点个数为0；<br/>
@@ -32,21 +32,21 @@ published: true
     		return size(leaf->getleft()+leaf->getright())+1;
     	}
     }
-    
+
 4.求二叉树的深度：<br/>
 如果二叉树为空，则深度为0；<br/>
 如果二叉树不为空，则深度为**max(左子树节点个数, 右子树节点个数)+1**;
 
     int BinaryTree::getDepth(Node* root) {
-	     if (root == null) {
+         if (root == null) {
      	      return 0;  
      	  }
      	  int depthLeft = getDepth(root->left);
      	  int depthRight = getDepth(root->right);
      	  //return depthLeft>depthRight?(depthLeft+1):(depthRight+1);
      	  return max(depthLeft, depthRight) + 1;
-	 }
-	 
+     }
+
 5.前序遍历，中序遍历，后序遍历<br/>
 5.1 前序遍历  **根左右**<br/>
 (1)如果二叉树为空，进行空操作.<br/>
@@ -59,12 +59,12 @@ published: true
         	PreOrderTraverse(root->left);
         	PreOrderTraverse(root->right);
     } 
-   
+
  <br/>
 5.2 中序遍历  **左根右**<br/>
 (1)如果二叉树为空，进行空操作.<br/>
 (2)如果二叉树不为空，中序遍历左子树，访问根节点，中序遍历右子树<br/>
- 
+
     void PreOrderTraverse(BinaryTreeNode * root) {
     	if (!root)
     		return ;
@@ -72,7 +72,7 @@ published: true
        visit(root);//visit the root node
        PreOrderTraverse(root->right);
     }
-    
+
 <br/>
 5.3 后序遍历  **左右根**<br/>
 (1)如果二叉树为空，空操作.<br/>
@@ -85,8 +85,8 @@ published: true
        	PreOrderTraverse(root->right);
        	visit(root);//visit the root node
     }
-    
-    
+
+
 <br/>
 6.分层遍历二叉树<br/>
 按照层次遍历二叉树，即使用上->下，左->右的顺序遍历二叉树。<br/>
@@ -112,5 +112,35 @@ published: true
     	}
     }
 
+7.判断两个二叉树是否一致：
 
+使用递归方法，先判断两个二叉树根节点是否一致，若一致，则使用左右子树分别表示根节点进行判断。
 
+# Definition for a binary tree node.
+
+```python
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+class Solution(object):
+    def isSameTree(self, p, q):
+    """
+    :type p: TreeNode
+    :type q: TreeNode
+    :rtype: bool
+    """
+    if not p and not q:
+    	return True
+    if p and q:
+    	#print 'True'
+    	return (p.val == q.val) and self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+    return False
+if name == 'main':
+    p = TreeNode(1)
+    q = TreeNode(1)
+    p.left = TreeNode(2)
+    q.left = TreeNode(2)
+    Solution().isSameTree(p, q)
+```
