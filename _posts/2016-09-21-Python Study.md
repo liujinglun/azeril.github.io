@@ -405,3 +405,9 @@ a,b均为string类型，join函数的作用是使用a作为分隔符，将a插�
 - ' '.join(b) 结果为在2,3,4之间插入空格，结果为'2 3 4'.
 - a.join(b)结果为'21314'.
 - 返回结果仍为string类型。
+
+## module import 问题
+
+今天在import twitter module时出现了一个问题，记录一下。
+
+python下的package存放路径为/Library/Python/2.7/site-packages，当我使用sudo pip install twitter —user 安装后，在命令行里显示安装成功，但是在site-packages里面找不到twiitter的package，使用import twitter也报错灭有twitter的package。经查验资料发现是文件夹读取权限问题，以至于在site-package下面没有权限读取twitter的package，使用chmod 777 /site-package 命令使site-package文件夹获取读写的权限，然后使用pip install twitter(无sudo)即可成功识别到twitter package。
