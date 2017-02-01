@@ -144,3 +144,70 @@ if name == 'main':
     q.left = TreeNode(2)
     Solution().isSameTree(p, q)
 ```
+
+8.**Leetcode 404. Sum of Left Leaves**
+
+Find the sum of all left leaves in a given binary tree.
+
+#### Analysis:
+
+- Recursion:
+
+  ​	判断当前节点的状态，如果**当前节点的左子树存在且当前节点左子树的左右子树均不存在**，则获取当前节点左子树的数值。之后对当前节点的左右子树分别进行同样的操作。
+
+- Iteration
+
+  ​	可看做binary tree的层次遍历，使用queue的数据结构，首先将root节点加入到queue中，并弹出queue的头节点(root节点信息在被记录之后弹出)。判断root的左右子树是否符合要求，如果符合要求则记录下数值，不符合要求则将root的左右子树加入到queue中，继续判断。
+
+#### Code:
+
+- Recursion:
+
+  ​
+
+  ```python
+  class Solution(object):
+  	def sumOfLeftLeaves(self, root):
+      	"""
+      	:type root: TreeNode
+      	:rtype: int
+      	"""
+      	#recursion
+      	value = 0
+      	if root:
+      	l, r = root.left, root.right
+      	if l and l.left is None and l.right is None:
+      		value += l.val
+      		value += self.sumOfLeftLeaves(l) + self.sumOfLeftLeaves(r)
+      	return value
+  ```
+
+- Iteration:
+
+
+
+```python
+class Solution(object):
+	def sumOfLeftLeaves(self, root):
+    	"""
+   	 	:type root: TreeNode
+   	 	:rtype: int
+    	"""
+    #iteration
+    #hierarchical traverse of binary tree.
+    	if root is None:
+    		return 0
+    	queue = []
+    	value = 0
+    	queue.append(root)
+    	while queue:
+        	target = queue[0]
+        	queue.remove(target)
+        	if target.left and target.left.left is None and target.left.right is None:
+            	value += target.left.val
+        	if target.left:
+            	queue.append(target.left)
+        	if target.right:
+            	queue.append(target.right)
+    	return value
+```
