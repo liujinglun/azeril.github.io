@@ -163,8 +163,6 @@ Find the sum of all left leaves in a given binary tree.
 
 - Recursion:
 
-  ​
-
   ```python
   class Solution(object):
   	def sumOfLeftLeaves(self, root):
@@ -211,3 +209,6 @@ class Solution(object):
             	queue.append(target.right)
     	return value
 ```
+9.Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
+
+题目要求从右侧观察二叉树，输出看到的节点。即输出二叉树每一层中的最右侧节点。应该对二叉树进行层次遍历，并输出每一层的最后一个节点。使用queue的数据结构，并对二叉树的每一层节点个数进行计数。使用两个while循环完成。
