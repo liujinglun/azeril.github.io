@@ -39,7 +39,11 @@ TensorFlow Installation
 
 此时安装完成。
 
-**运行TensorFlow**[Path:/Users/liujinglun/tensorflow]
+> (tensorflow)$ deactivate  # 停用 virtualenv
+
+
+
+运行TensorFlow**[Path:/Users/liujinglun/tensorflow]
 
 ```shell
 >>> import tensorflow as tf
