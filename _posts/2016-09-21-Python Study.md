@@ -411,3 +411,33 @@ a,b均为string类型，join函数的作用是使用a作为分隔符，将a插�
 今天在import twitter module时出现了一个问题，记录一下。
 
 python下的package存放路径为/Library/Python/2.7/site-packages，当我使用sudo pip install twitter —user 安装后，在命令行里显示安装成功，但是在site-packages里面找不到twiitter的package，使用import twitter也报错灭有twitter的package。经查验资料发现是文件夹读取权限问题，以至于在site-package下面没有权限读取twitter的package，使用chmod 777 /site-package 命令使site-package文件夹获取读写的权限，然后使用pip install twitter(无sudo)即可成功识别到twitter package。
+
+## 21.log用法
+
+- log(int(n), m);n在上，m在下。
+
+例：
+
+**log(int(9), 3) = 2**
+
+2*3=6
+
+2**3=2^3=8
+
+## 22.正则表达式对string进行分词
+
+```python
+s = re.sub(r'\d+', ' \g<0> ', s)
+s = s.split()
+```
+
+Input
+
+> s = ' 3 + 2*66 '
+
+Output 
+
+> s = [u'3', u'+', u'2', u'*', u'66']
+
+- S
+- 此时s为string类型。
