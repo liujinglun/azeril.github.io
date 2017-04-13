@@ -12,11 +12,11 @@ published: true
 
 Java面试相关问题：
 
-1. **JVM**
+1.**JVM**
 
 JVM是Java虚拟机，JVM会把Java code编译为byte code，然后执行这些byte code。所有的系统都能够安装Java虚拟机，这体现了Java程序的多平台执行优势。
 
-2. **OOPS**
+2.**OOPS**
 
 面向对象编程，具有四个概念；
 
@@ -25,38 +25,38 @@ JVM是Java虚拟机，JVM会把Java code编译为byte code，然后执行这些b
 - Inheritance 继承；
 - Encapsulation 封装；
 
-3. **Overloadding VS Overriding**
+3.**Overloadding VS Overriding**
 
 - Overloadding 发生在compile阶段，Overriding发生在runtime阶段；
 - Overloading是在同一个类中写同一个函数，只是参数的类型不同。而overriding一般会在子类中出现，并且重写的时候函数名字和参数类型是一样的。
 - 返回类型，overloading可以自由定义，但是overriding必须和继承的父类保持一致。
 - 可以overloading一个static类，但是不能overriding一个static类。
 
-4. **Static 和 Instance**
+4.**Static 和 Instance**
 
 **static** method 是一个类级别的方法，可以直接调用。**instance**是一个对象级别的方法，需要首先创建一个引用指向它，然后再进行调用。
 
-5. **Stringbuilder, Stringbuffer, string的区别**
+5.**Stringbuilder, Stringbuffer, string的区别**
 
 - String是immutable的，不可改变的。Stringbuilder和Stringbuffer都是mutable的。
 - Stringbuffer是synchronized(同步的)，Stringbuilder不是。
 - Stringbuilder比Stringbuffer快。
 - Stringbuffer线程安全，且保证同步。Stringbuilder不保证线程同步。String也是线程安全的，因为它不改变。
 
-6. **Java是值传递还是引用传递**
+6.**Java是值传递还是引用传递**
 
 在写函数的过程中，如果参数是基本类，如int或者double，那么java是值传递。在Java中对象作为参数传递时，把对象在内存中的地址拷贝了一份传给了参数。所以总体来说都是pass by value。
 
-7. **Serialization and Desearialziation**
+7.**Serialization and Desearialziation**
 
 Serialization将对象转化为数据流，方便对象可以在网络中进行传递。Desearialziation将数据流转化为对象。
 
-8. **Final, Finally, FInalize**
+8.**Final, Finally, FInalize**
 
 - Final可以修饰变量，方法和类。修饰变量，说明该变量不能再改变。修饰method，说明该方法不能被overridden。修饰class，说明改类不能被继承。
 - Finally是用在异常处理的情况。代码如果被写入了finally的模块中，不管该代码是否抛出异常，到最后finally块中的代码都必须执行，这个修饰一般用在关闭网络流，数据流或者输入输出流一类的处理。
 
-9. **Java创建多线程**
+9.**Java创建多线程**
 
 一般在java中,创建多线程有两种方法:
 
@@ -98,19 +98,19 @@ Serialization将对象转化为数据流，方便对象可以在网络中进行�
   ```
 
 
-10. **Java HashMap**
+10.**Java HashMap**
 
 HashMap是基于Map接口的实现，储存键值对时，可以接收null的键值，是非同步的。HashMap储存着Entry(hash, key, value, next)对象。
 
-11. **HashMap的get和put函数**
+11.**HashMap的get和put函数**
 
 在使用put函数的时候，会把key和value传入，hashmap会使用hashcood函数计算出key的hash value，通过计算出的hash value找到对应的bucket，如果当前的bucket已经满了，HashMap会根据情况对容量进行扩容，一般是当前capacity的两倍。使用get函数的时候传入key的值，计算出对应的hash value，找到对应的bucket，然后在bucket中使用equals函数找到相应的key。如果出现碰撞的情况，会使用linked list解决冲突。
 
-12. **创建私有的构造函数**
+12.**创建私有的构造函数**
 
 私有构造函数和一般的私有函数没有区别，只是能够类内部进行调用，外部无法进行访问。创建私有函数的原因有两个：（1）不想让除了类之外的其他类构造访问这个类（2）只希望该对象在类的内部构造。
 
-13. **Singleton Design(单例模式)**
+13.**Singleton Design(单例模式)**
 
 设计singleton的关键是不能让其他类随便构造该类对象，即控制该类的构造函数。将构造函数变为私有是一个关键的步骤。
 
@@ -171,19 +171,18 @@ public class Useupstack {
 	}
 }
 ```
-- 用完堆里面的函数：java不方便对内存直接调用，所以用C++。C++可以任意对内存进行控制，可以使用malloc函数进行内存操作：
+用完堆里面的函数：java不方便对内存直接调用，所以用C++。C++可以任意对内存进行控制，可以使用malloc函数进行内存操作：
 
-  ```c++
+```c++
 
-  #include <stdlib.h>
-  #include <unistd.h>
+#include <stdlib.h>
+#include <unistd.h>
 
-  void main(int argc, char** argv)
-  {
-      while(1)
-      {
-          malloc(1);
-      }
-  }
-  ```
-
+void main(int argc, char** argv)
+{
+    while(1)
+    {
+        malloc(1);
+    }
+}
+```
