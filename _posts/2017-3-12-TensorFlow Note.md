@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Note for TensorFlow Course by Stanford
+title: Note for TensorFlow
 categories:  [blog ]
 tags: [Deep Learning]
 comments: true
@@ -16,7 +16,9 @@ published: true
   - 1-d: vector
   - 2-d: matrix
 
-![w][image-1]
+![w](https://ww4.sinaimg.cn/large/006tNc79gy1fdkqyzihmwj30xw0j277d.jpg)
+
+
 
 Tensors are datas on the edge.
 
@@ -40,12 +42,20 @@ Tensors are datas on the edge.
   - Multiple graphs need multiple sessions, each will try to use all available resources.
 
   - Can't pass data between them without passing them through python/numpy, which doesn't work in distributed.​
-![2](https://ww2.sinaimg.cn/large/006tNc79gy1fdkrw6hskvj30xq0iomzb.jpg)
+    ![2](https://ww2.sinaimg.cn/large/006tNc79gy1fdkrw6hskvj30xq0iomzb.jpg)
 
 - a = tf.constant(3)
 
 
-	  
-	​
+![s](https://ww1.sinaimg.cn/large/006tNc79gy1fdktndjlq0j31400mi41o.jpg)
 
-[image-1]:	https://ww4.sinaimg.cn/large/006tNc79gy1fdkqyzihmwj30xw0j277d.jpg
+- TensorFlow Operations:
+
+![Operation](https://ww2.sinaimg.cn/large/006tNc79gy1fdktobwp9dj30yc0hutmq.jpg)
+
+- TensorFlow Data Types:
+
+![DataType](https://ww1.sinaimg.cn/large/006tNc79gy1fdkton5solj30xo0iugrf.jpg)
+
+- When constants are big, loading graphs is expensive. Use variables or readers for more data that requires more momery.
+- ​
