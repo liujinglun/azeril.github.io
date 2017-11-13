@@ -1,9 +1,9 @@
 layout: post
 title: Decision Tree Note
-categories:  [blog ]
+categories:   [blog ]
 tags: [Algorithm ]
-comments: true
-published: true
+comments:  true
+published:  true
 
 # Decision Tree学习笔记
 
